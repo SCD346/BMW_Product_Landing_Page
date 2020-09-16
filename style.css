@@ -1,31 +1,51 @@
-#nav-bar {
-    border: 1px solid red;
-    display: flex;
-    flex-wrap: nowrap;
-    position: fixed;
-    top: 0;
-    background-color: white;
+body {
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-li {
-    list-style: none;
-    padding-right: 2vh;
-    display: inline-block;
-    
-  }
+#nav-bar {
+    /* border: 1px solid red; */
+    background-color: white;
+    display: flex;
+    position: fixed;
+    width: 98.8%;
+    top: 0;
+}
+
+#nav-links {
+  /* border: 1px solid purple; */
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+      .nav-link {
+        padding-right: 5vh;
+        padding-left: 5vh;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: inherit;
+        text-transform: 
+    }
+      
+      a:hover {
+        text-decoration: underline;
+     
+    }
 
 
+#nav-logos {
+  /* border: 1px solid olivedrab; */
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
 
 #nav-logo {
-    border: 1px solid red;
-    width: 155px;
-    height: 150px;
-    margin-left: 160vh;
+    /* border: 1px solid blue; */
+    justify-content: right;
 }
-
-  @media (max-width: 600px) {
-    header {
-      flex-wrap: wrap;
-    }
-  }
-
